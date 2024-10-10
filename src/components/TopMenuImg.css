@@ -1,0 +1,43 @@
+.banner-wrapper .wrapper .images img {
+  max-width: 90px;
+  padding: 0 6px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+img {
+  transition: all 0.5s;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.banner-wrapper .wrapper {
+  display: flex;
+}
+
+.banner-wrapper .wrapper .images {
+  display: flex;
+
+  animation: scroll 200s linear infinite;
+
+  transition: all 0.3s;
+}
+.banner-wrapper:hover .wrapper .images {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.banner-wrapper {
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 2px;
+}
